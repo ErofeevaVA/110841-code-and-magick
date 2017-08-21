@@ -33,22 +33,22 @@ var wizards = [
     name: getWizardName() + ' ' + getWizardSurname(),
     coatColor: getWizardCoatColor(),
     eyesColor: getWizardEyesColor()
-    },
-    {
+  },
+  {
     name: getWizardName() + ' ' + getWizardSurname(),
     coatColor: getWizardCoatColor(),
     eyesColor: getWizardEyesColor()
-    },
-    {
+  },
+  {
     name: getWizardName() + ' ' + getWizardSurname(),
     coatColor: getWizardCoatColor(),
     eyesColor: getWizardEyesColor()
-    },
-    {
+  },
+  {
     name: getWizardName() + ' ' + getWizardSurname(),
     coatColor: getWizardCoatColor(),
     eyesColor: getWizardEyesColor()
-    }
+  }
 ];
 
 var similarListElement = userDialog.querySelector('.setup-similar-list');
@@ -63,7 +63,7 @@ var renderWizard = function (wizard) {
   wizardElement.querySelector('.wizard-eyes').style.fill = wizard.eyesColor;
 
   return wizardElement;
-}
+};
 
 var fragment = document.createDocumentFragment();
 for (var i = 0; i < wizards.length; i++) {
@@ -72,4 +72,3 @@ for (var i = 0; i < wizards.length; i++) {
 similarListElement.appendChild(fragment);
 
 userDialog.querySelector('.setup-similar').classList.remove('hidden');
-
